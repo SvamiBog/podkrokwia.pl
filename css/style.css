@@ -79,10 +79,131 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-.menu a {
+.body {
+  margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.55))), url("../img/header-bg.jpg") 0 0/100% auto no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.55)), url("../img/header-bg.jpg") 0 0/100% auto no-repeat;
+  padding-top: 50px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 227px;
+  width: 1170px;
+}
+.nav__logo {
+  color: #ffffff;
+  font-family: "Big John";
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu__list > li:hover .sub-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.menu__list > li:hover {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 17px;
+  border: 1px solid #ffffff;
+}
+.menu__link {
+  display: block;
+  text-align: center;
+  padding: 0 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.menu > ul > li {
+  padding: 8px 22px;
 }
 
 .menu li {
+  max-width: 200px;
   list-style: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.sub-menu__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px 0px 0px 0px;
+}
+.sub-menu__link {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  padding: 5px 10px;
+}
+
+.header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 220px;
+}
+.header-text__title {
+  color: #ffffff;
+  font-family: "Source Sans Pro";
+  font-size: 35px;
+  font-weight: 300;
+  line-height: 70px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+.header-text__subtitle {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.8px;
 }

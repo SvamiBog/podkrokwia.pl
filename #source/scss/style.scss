@@ -4,33 +4,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@0,300;1,300;1,400&display=swap');
 @import url('http://fonts.cdnfonts.com/css/big-john');
 
+.body {
+	margin: 0;
+}
 
 .header {
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.55)), url("../img/header-bg.jpg") 0 0/100% auto no-repeat;
+	padding-top: 50px;
 }
 .container {
 }
 .nav {
-	&__logo {}
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 227px;
+	width: 1170px;
+	&__logo {
+		color: #ffffff;
+		font-family: "Big John";
+		font-size: 25px;
+		font-weight: 400;
+		line-height: 12px;
+	}
 }
 .logo {
 }
 .menu {
-	&__list {}
-	&__link {}
+	&__list {
+		display: flex;
+	}
+	&__list>li:hover .sub-menu__list {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+	}
+	&__list>li:hover {
+		position: relative;
+		display: flex;
+		border-radius: 17px;
+		border: 1px solid #ffffff;
+	}
+	&__link {
+		display: block;
+		text-align: center;
+		padding: 0 10px;
+		transition: all .5s;
+		text-decoration: none;
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 12px;
+	}
 }
-.menu a {
-	text-decoration: none;
+.menu>ul>li {
+	padding: 8px 22px;
 }
 .menu li {
+	max-width: 200px;
 	list-style: none;
+	position: relative;
+	margin-bottom: 10px;
 }
 .sub-menu {
-	&__list {}
-	&__link {}
-}
-.header-text {
-	&__title {
-		
+	&__list {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding: 20px 0px 0px 0px;
 	}
-	&__subtitle {}
+	&__link {
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 16px;
+		font-weight: 400;
+		padding: 5px 10px;
+	}
+}
+
+.header-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 220px;
+	&__title {
+		color: #ffffff;
+		font-family: "Source Sans Pro";
+		font-size: 35px;
+		font-weight: 300;
+		line-height: 70px;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+	}
+	&__subtitle {
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 28px;
+		text-align: center;
+		letter-spacing: 0.8px;
+	}
 }
