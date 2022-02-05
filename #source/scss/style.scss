@@ -14,13 +14,15 @@
 	background: linear-gradient(rgba(0, 0, 0, 0.55)), url("../img/header-bg.jpg") 0 0/100% auto no-repeat;
 	padding-top: 50px;
 }
-.container {
+.header-container {
+	width: 1170px;
 }
 .nav {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 227px;
-	width: 1170px;
+	width: 100%;
+	align-items: center;
 	&__logo {
 		color: #ffffff;
 		font-family: "Big John";
@@ -36,15 +38,15 @@
 		display: flex;
 	}
 	&__list>li:hover .sub-menu__list {
-		display: flex;
-		flex-direction: column;
-		margin-top: 20px;
+		visibility: visible;
+		opacity: 2;
 	}
 	&__list>li:hover {
 		position: relative;
 		display: flex;
 		border-radius: 17px;
-		border: 1px solid #ffffff;
+		border-color: transparent;
+		outline: solid 2px #ffffff;
 	}
 	&__link {
 		display: block;
@@ -61,27 +63,33 @@
 }
 .menu>ul>li {
 	padding: 8px 22px;
-}
-.menu li {
 	max-width: 200px;
 	list-style: none;
 	position: relative;
+}
+
+.menu>ul>li>ul>li {
 	margin-bottom: 10px;
 }
+
 .sub-menu {
 	&__list {
-		display: none;
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		visibility: hidden;
+		opacity: 0;
 		position: absolute;
 		left: 0;
 		top: 0;
-		padding: 20px 0px 0px 0px;
+		padding-top: 20px;
 	}
 	&__link {
 		color: #ffffff;
 		font-family: "Open Sans";
 		font-size: 16px;
 		font-weight: 400;
-		padding: 5px 10px;
+		padding: 0px 10px;
 	}
 }
 
@@ -89,7 +97,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-bottom: 220px;
+	margin-bottom: 300px;
 	&__title {
 		color: #ffffff;
 		font-family: "Source Sans Pro";
@@ -108,4 +116,48 @@
 		text-align: center;
 		letter-spacing: 0.8px;
 	}
+}
+
+
+.main {
+}
+.block1 {
+	padding-top: 80px;
+	display: flex;
+	background: #fff;
+	justify-content: center;
+}
+.block1-container {
+	display: flex;
+	width: 1170px;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+.block1-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 470px;
+	&__title {
+		margin-bottom: 40px;
+		color: #333b46;
+		font-family: "Source Sans Pro";
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 12px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+	}
+	&__subtitle {
+		margin-left: 30px;
+		color: #81868e;
+		font-family: "Open Sans";
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 25px;
+		letter-spacing: 0.7px;
+	}
+}
+.block1-img {
+	&__photo {}
 }
