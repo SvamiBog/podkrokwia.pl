@@ -273,3 +273,59 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 25px;
   letter-spacing: 0.7px;
 }
+
+.block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f3f3f3;
+  padding-top: 100px;
+}
+.block2__title {
+  color: #333b46;
+  font-family: "Source Sans Pro";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 60px;
+}
+
+.block2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1170px;
+  margin-bottom: 100px;
+}
+
+.block2-sports {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.block2-sports__text {
+  height: 39px;
+  color: #81868e;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.block2-sports-box:not(:last-child) {
+  margin-right: 50px;
+}
