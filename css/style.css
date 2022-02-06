@@ -315,7 +315,16 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
 }
+.block2-sports__icon {
+  margin-bottom: 15px;
+}
 .block2-sports__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 39px;
   color: #81868e;
   font-family: "Open Sans";
@@ -324,6 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 25px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .block2-sports-box:not(:last-child) {

@@ -188,8 +188,11 @@
 .block2-sports {
 	display: flex;
 	&__icon {
+		margin-bottom: 15px;
 	}
 	&__text {
+		display: flex;
+		justify-content: center;
 		height: 39px;
 		color: #81868e;
 		font-family: "Open Sans";
@@ -198,6 +201,7 @@
 		line-height: 25px;
 		letter-spacing: 0.7px;
 		text-transform: uppercase;
+		text-align: center;
 	}
 }
 .block2-sports-box:not(:last-child) {
